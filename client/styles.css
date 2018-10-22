@@ -1,0 +1,308 @@
+@font-face {
+    font-family: bebas;
+    src: url(./fonts/BebasNeue-Regular.otf), url(./fonts/BebasNeue-Regular.ttf);
+    font-weight: bold;
+}
+
+body {
+    color: #43485b;
+}
+
+.quantity__minus,
+.quantity__more,
+.ingredient__weight,
+.ingredient-detail-table {
+    color: #7c86a8;
+}
+
+.header {
+  background-color: #69cb91;
+  padding: 30px;
+  text-align: center;
+  font-size: 25pt;
+  font-family: "bebas";
+  display: flex;
+}
+
+.header__logo {
+    margin: 0 auto;
+}
+
+.header__logo__si {
+  color: white;
+}
+
+.ingredients {
+  max-width: 480px;
+  margin: 1em auto;
+  padding: 0;
+  position: relative;
+}
+
+.ingredients__intro {
+    padding: 1em 1em 1em 2em;
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding-bottom: 60px;
+}
+
+.ingredients-list > .ingredient-item {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.ingredient-item div.ingredient-cell {
+    vertical-align: middle;
+}
+
+.ingredient__link {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+}
+
+.ingredient__allergens {
+    margin-right: 8px;
+    width: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredient__gluten {
+    width: 100%;
+}
+
+.ingredient__image {
+    width: 50px;
+    height: 50px;
+    margin-right: 14px;
+    border-radius: 10px;
+}
+
+.ingredient__name {
+    font-weight: 500;
+}
+
+.ingredient__weight {
+    font-size: 11pt;
+    display: block;
+    margin-top: 10px;
+}
+
+.ingredient-quantity {
+    align-items: center;
+    right: 16px;
+    position: absolute;
+    font-size: 20pt;
+    background: white;
+}
+
+.ingredient-item-bowl .ingredient-quantity {
+  background: inherit;
+}
+
+.quantity__more,
+.quantity__minus {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity__total{
+    padding: 0 10px;
+}
+
+.ingridients-resume {
+    left: 0;
+    bottom: 0;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.resume__link {
+    color: #fff;
+    background: #69cb91;
+    padding: 10px 100px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    text-decoration: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.ingredient-detail {
+    display: flex;
+    margin: 40px;
+}
+
+.ingredient-detail .ingredient-quantity {
+  right: 32px;
+}
+
+.ingredient-detail-table > p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.ingredient__values {
+    float: right;
+}
+
+div.ingredient-detail-table > p:nth-child(even) {
+    background-color: #69cb9122;
+}
+
+.ingredient__detail__image {
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.ingredient__detail__image > img {
+    width: 100%;
+    transform: translateY(-20%);
+}
+
+.header-detail {
+    background-color: #69cb91;
+    padding: 30px;
+    text-align: center;
+    font-size: 25pt;
+    font-family: "bebas";
+}
+
+.header-detail-back-arrow,
+.header-detail-share-button {
+    filter: opacity(75%);
+    position: absolute;
+    cursor: pointer;
+}
+
+.header-detail-back-arrow {
+    left: 10px;
+    width: 1em;
+}
+
+.header-detail-share-button {
+    right: 15px;
+    width: 0.9em;
+}
+
+.ingredient__detail__allergens {
+    text-align: center;
+    color: #ff7700;
+}
+
+.ingredient__detail__allergens img {
+    width: 10px;
+    margin-right: 10px;
+}
+
+.ingredient-item-bowl {
+    background: #E3FAF0;
+}
+
+.ingredient-list--summary {
+  padding-bottom: 0;
+}
+
+.ingredient-list--summary .ingredient-item {
+  background: white;
+  padding: 10px 30px;
+}
+
+.ingredient-list--summary .ingredient-item:nth-child(even) {
+  background: #E3FAF0;
+}
+
+.ingredient-list--summary .ingredient__name {
+  font-weight: 700;
+}
+
+.ingredient-list--summary .ingredient-quantity {
+  background: inherit;
+  right: 16px;
+}
+
+.summary-total {
+  border-top: dashed 3px #E3E6EC;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.summary-total__amount {
+  text-align: right;
+  font-size: 20pt;
+  font-weight: 600;
+  padding: 20px 30px 50px;
+}
+
+.list-with-detail {
+  pointer-events: none;
+}
+
+@keyframes showModal {
+  to {
+    transform: scale(1) translateY(-50%) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+.modal {
+  max-width: 90vw;
+  width: 54ch;
+  box-sizing: border-box;
+  position: fixed;
+  top: 45vh;
+  left: 50vw;
+  background: white;
+  margin: 2em auto;
+  padding-bottom: 2em;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 100vmax rgba(0, 0, 0, 0.6),
+    0 5px 10px rgba(0, 0, 0, 0.2)
+  ;
+  opacity: 0;
+  transform: scale(0.9) translateY(-50%) translateX(-50%);
+  transform-origin: 0 50%;
+  animation: showModal ease 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal figure {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.close-modal-button {
+  position: absolute;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 300;
+  font-family: monospace;
+  font-size: 24px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    0 0 40px 10px rgba(255, 255, 255, 0.1)
+  ;
+  right: 0.5em;
+  top: 0.5em;
+}
