@@ -1,5 +1,3 @@
-const SERVER_URL = 'http://localhost:3000';
+const SERVER_URL = 'http://localhost:3000'
 
-export {
-  SERVER_URL
-};
+export { SERVER_URL }

@@ -1,4 +1,4 @@
-import { SERVER_URL } from './constants.js';
+import { SERVER_URL } from './constants.js'
 
 /**
  * Perform an HTTP request through fetch to the API server
@@ -6,9 +6,9 @@ import { SERVER_URL } from './constants.js';
  * @param {object|undefined} options
  * @return {Promise<Response>}
  */
-function api(path, options) {
-  return fetch(`${SERVER_URL}${path}`, options);
+function api (path, options) {
+  return fetch(`${SERVER_URL}${path}`, options)
 }
 
-export { api };
-export default api;
+export { api }
+export default api
