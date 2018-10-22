@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "POKESI, the perfect bowl",
   "scripts": {
-  	"start": "parcel --https index.html"
+    "start": "parcel --https index.html"
   },
-  "author": "",
+  "contributors": [
+    {
+      "name": "Pablo Molina"
+    },
+    {
+      "name": "Sarai Díaz"
+    }
+  ],
   "license": "ISC",
   "dependencies": {
     "hyperapp": "^1.2.9"
