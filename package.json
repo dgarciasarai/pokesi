@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "POKESI, the perfect bowl",
   "scripts": {
+    "lint:js": "prettier-standard client/**/*.js server/**/*.js",
     "start:client": "cd client && parcel --https index.html",
     "start:server": "cd server && json-server data.json"
   },
