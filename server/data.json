@@ -1,0 +1,462 @@
+{
+  "ingredients": [
+    {
+      "slug": "quinoa",
+      "image": "/quinoa.jpg",
+      "name": "Quinoa",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "43"
+    },
+
+    {
+      "slug": "hawaiian-bamboo-rice",
+      "image": "/hawaiian-bamboo-rice.jpg",
+      "name": "Hawaiian bamboo rice",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "97"
+    },
+
+    {
+      "slug": "atun",
+      "image": "/atun.jpg",
+      "name": "Atún",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "65"
+    },
+
+    {
+      "slug": "salmon",
+      "image": "/salmon.jpg",
+      "name": "Salmón",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "55"
+    },
+
+    {
+      "slug": "langostino",
+      "image": "/langostino.jpg",
+      "name": "Langostino",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "mix-verduras",
+      "image": "/mix-verduras.jpg",
+      "name": "Mix verduras",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "87"
+    },
+
+    {
+      "slug": "arroz",
+      "image": "/arroz.jpg",
+      "name": "Arroz",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "leche-de-tigre",
+      "image": "/leche-de-tigre.jpg",
+      "name": "Leche de tigre",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "23"
+    },
+
+    {
+      "slug": "ponzu-lima",
+      "image": "/ponzu-lima.jpg",
+      "name": "Ponzu lima",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "sweet-chili-lima",
+      "image": "/sweet-chili-lima.jpg",
+      "name": "Sweet chili-lima",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "sriracha-aioli",
+      "image": "/sriracha-aioli.jpg",
+      "name": "Sriracha aioli",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "boniato",
+      "image": "/boniato.jpg",
+      "name": "Boniato",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "cebolla",
+      "image": "/cebolla.jpg",
+      "name": "Cebolla",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "cebolla-roja",
+      "image": "/cebolla-roja.jpg",
+      "name": "Cebolla",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "edamame",
+      "image": "/edamame.jpg",
+      "name": "Edamame",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "kale",
+      "image": "/kale.jpg",
+      "name": "Kale",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "48"
+    },
+
+    {
+      "slug": "pepino",
+      "image": "/pepino.jpg",
+      "name": "Pepino",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "pepino-kimchi",
+      "image": "/pepino-kimchi.jpg",
+      "name": "Pepino kimchi",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "rucula",
+      "image": "/rucula.jpg",
+      "name": "Rúcula",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "wakame",
+      "image": "/wakame.jpg",
+      "name": "Wakame",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "zanahoria",
+      "image": "/zanahoria.jpg",
+      "name": "Zanahoria",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "sesamo",
+      "image": "/sesamo.jpg",
+      "name": "Sésamo",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "pina",
+      "image": "/pina.jpg",
+      "name": "Piña",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "anacardos",
+      "image": "/anacardos.jpg",
+      "name": "Anacardos",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "aguacate",
+      "image": "/aguacate.jpg",
+      "name": "Aguacate",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "huevo",
+      "image": "/huevo.jpg",
+      "name": "Huevo",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": false,
+      "weight": "80"
+    },
+
+    {
+      "slug": "tobiko",
+      "image": "/tobiko.jpg",
+      "name": "Tobiko",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    }
+  ]
+}
