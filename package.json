@@ -2,7 +2,6 @@
   "name": "pokesi",
   "version": "1.0.0",
   "description": "POKESI, the perfect bowl",
-  "main": "index.js",
   "scripts": {
   	"start": "parcel --https index.html"
   },
