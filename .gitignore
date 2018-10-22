@@ -1,3 +1,4 @@
+client/dist/
+client/.cache/
+
 node_modules/
-dist/
-.cache
