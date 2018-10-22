@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "hyperapp": "^1.2.9",
-    "json-server": "^0.14.0"
+    "json-server": "^0.14.0",
+    "parcel-bundler": "^1.10.3"
   }
 }
