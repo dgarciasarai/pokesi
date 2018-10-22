@@ -10,7 +10,12 @@ const state = {
   }
 }
 
-const actions = {}
+const actions = {
+  goTo: pathname => state => {
+    window.history.pushState(null, null, pathname)
+    return { route: { pathname } }
+  }
+}
 
 const view = (state, actions) => {
   const pathname = state.route.pathname
