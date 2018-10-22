@@ -10,5 +10,5 @@ function api (path, options) {
   return fetch(`${SERVER_URL}${path}`, options)
 }
 
-export { api }
+export { api };
 export default api

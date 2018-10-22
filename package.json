@@ -8,6 +8,27 @@
     "start:client": "cd client && parcel --https index.html",
     "start:server": "cd server && json-server data.json"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "client/**/*.css": [
+        "npm run lint:css",
+        "git add"
+      ],
+      "client/**/*.js": [
+        "npm run lint:js",
+        "git add"
+      ],
+      "server/**/*.js": [
+        "npm run lint:js",
+        "git add"
+      ]
+    }
+  },
   "contributors": [
     {
       "name": "Pablo Molina"
@@ -19,8 +40,10 @@
   "license": "ISC",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "husky": "^1.1.2",
     "hyperapp": "^1.2.9",
     "json-server": "^0.14.0",
+    "lint-staged": "^7.3.0",
     "parcel-bundler": "^1.10.3",
     "prettier-standard": "^8.0.1",
     "stylelint": "^9.6.0",
