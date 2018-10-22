@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "POKESI, the perfect bowl",
   "scripts": {
-    "start": "parcel --https index.html"
+    "start:client": "cd client && parcel --https index.html"
   },
   "contributors": [
     {
