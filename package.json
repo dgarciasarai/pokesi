@@ -41,6 +41,7 @@
     "lint-staged": "^7.3.0",
     "parcel-bundler": "^1.10.3",
     "prettier-standard": "^8.0.1",
+    "sanitize.css": "^8.0.0",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0"
   }

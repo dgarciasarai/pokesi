@@ -6,7 +6,18 @@ function IngredientList (state, actions) {
   }
 
   return (
-    <ul>{state.ingredients.map(ingredient => <li>{ingredient.name}</li>)}</ul>
+    <div>
+      <div class="header">POKESI</div>
+      <div class="ingredients">
+        <p>Selecciona tus ingredientes</p>
+        <ul class="ingredients-list">{state.ingredients.map(ingredient =>
+            <li class="ingredient-element">
+              <img class="ingredient-image" src={ingredient.image}/>
+              {ingredient.name}
+            </li>
+          )}</ul>
+      </div>
+    </div>
   )
 }
 
