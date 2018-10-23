@@ -1,3 +1,5 @@
+import api from '../utils/api'
+
 const loadIngredients = () => async (state, actions) => {
   try {
     const response = await api('/ingredients');

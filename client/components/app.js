@@ -1,6 +1,6 @@
-import IngredientDetail from './components/ingredient-detail'
-import IngredientList from './components/ingredient-list'
-import Summary from './components/summary'
+import IngredientDetail from './ingredient-detail'
+import IngredientList from './ingredient-list'
+import Summary from './summary'
 
 function app(state, actions) {
   const pathname = state.route.pathname
