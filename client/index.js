@@ -1,10 +1,15 @@
+import 'babel-polyfill'
 import { h, app } from 'hyperapp'
 
 import IngredientDetail from './components/ingredient-detail'
 import IngredientList from './components/ingredient-list'
 import Summary from './components/summary'
 
+import { api } from './utils/api'
+
 const state = {
+  ingredients: [],
+
   route: {
     pathname: window.location.pathname
   }
@@ -14,6 +19,22 @@ const actions = {
   goTo: pathname => state => {
     window.history.pushState(null, null, pathname)
     return { route: { pathname } }
+  },
+
+  loadIngredients: () => async (state, actions) => {
+    try {
+      const response = await api('/ingredients');
+      const ingredients = await response.json();
+      actions.loadIngredientsSuccess(ingredients);
+    } catch (error) {
+      console.error(error)
+    }
+
+    return { ingredients: null }
+  },
+
+  loadIngredientsSuccess: ingredients => () => {
+    return { ingredients }
   }
 }
 
