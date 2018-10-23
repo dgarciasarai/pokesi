@@ -9,6 +9,16 @@
       "id": 2,
       "name": "Aguacate",
       "image": "https://cdn.pixabay.com/photo/2015/09/09/20/17/avocado-933060_1280.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Arroz",
+      "image": "https://cdn.pixabay.com/photo/2014/10/22/18/43/rice-498688_1280.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Quinoa",
+      "image": "https://cdn.pixabay.com/photo/2014/07/30/18/37/quinoa-405538_1280.jpg"
     }
   ]
 }
