@@ -1,21 +1,14 @@
 {
-  "posts": [
+  "ingredients": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-
-  "comments": [
+      "name": "Salmón",
+      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_1280.jpg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Aguacate",
+      "image": "https://cdn.pixabay.com/photo/2015/09/09/20/17/avocado-933060_1280.jpg"
     }
-  ],
-
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
