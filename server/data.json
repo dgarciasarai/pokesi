@@ -1,24 +1,462 @@
 {
   "ingredients": [
     {
-      "id": 1,
-      "name": "Salmón",
-      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_1280.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Aguacate",
-      "image": "https://cdn.pixabay.com/photo/2015/09/09/20/17/avocado-933060_1280.jpg"
-    },
-    {
-      "id": 3,
+      "slug": "arroz",
       "name": "Arroz",
-      "image": "https://cdn.pixabay.com/photo/2014/10/22/18/43/rice-498688_1280.jpg"
+      "image": "https://cdn.pixabay.com/photo/2014/10/22/18/43/rice-498688_1280.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
     },
+
     {
-      "id": 4,
+      "slug": "quinoa",
       "name": "Quinoa",
-      "image": "https://cdn.pixabay.com/photo/2014/07/30/18/37/quinoa-405538_1280.jpg"
+      "image": "https://cdn.pixabay.com/photo/2014/07/30/18/37/quinoa-405538_1280.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "43"
+    },
+
+    {
+      "slug": "kale",
+      "name": "Kale",
+      "image": "https://cdn.pixabay.com/photo/2013/02/21/19/01/cabbage-84455_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "48"
+    },
+
+    {
+      "slug": "hawaiian-bamboo-rice",
+      "name": "Hawaiian bamboo rice",
+      "image": "https://cdn.pixabay.com/photo/2016/07/29/10/43/agriculture-1552390_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "97"
+    },
+
+    {
+      "slug": "atun",
+      "name": "Atún",
+      "image": "https://cdn.pixabay.com/photo/2017/02/05/11/48/sushi-2039735_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "65"
+    },
+
+    {
+      "slug": "salmon",
+      "name": "Salmón",
+      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_1280.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "55"
+    },
+
+    {
+      "slug": "langostino",
+      "name": "Langostino",
+      "image": "https://cdn.pixabay.com/photo/2017/05/21/13/02/shrimp-2331239_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "mix-verduras",
+      "name": "Mix verduras",
+      "image": "https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "87"
+    },
+
+    {
+      "slug": "leche-de-tigre",
+      "name": "Leche de tigre",
+      "image": "https://cdn.pixabay.com/photo/2016/08/11/23/25/glass-1587258_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "23"
+    },
+
+    {
+      "slug": "ponzu-lima",
+      "name": "Ponzu lima",
+      "image": "https://cdn.pixabay.com/photo/2017/03/10/15/15/lime-2133091_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "sweet-chili-lima",
+      "name": "Sweet chili-lima",
+      "image": "https://cdn.pixabay.com/photo/2014/10/22/21/49/chili-499062_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "sriracha-aioli",
+      "name": "Sriracha aioli",
+      "image": "https://cdn.pixabay.com/photo/2016/06/10/14/33/aioli-1448217_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "boniato",
+      "name": "Boniato",
+      "image": "https://cdn.pixabay.com/photo/2016/11/06/23/28/yam-1804451_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "cebolla",
+      "name": "Cebolla",
+      "image": "https://cdn.pixabay.com/photo/2015/02/24/15/38/onion-647525_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "cebolla-roja",
+      "name": "Cebolla",
+      "image": "https://cdn.pixabay.com/photo/2014/10/22/21/53/red-onions-vegetables-499066_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "edamame",
+      "name": "Edamame",
+      "image": "https://cdn.pixabay.com/photo/2016/10/23/09/32/japanese-food-1762480_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "pepino",
+      "name": "Pepino",
+      "image": "https://cdn.pixabay.com/photo/2015/03/23/08/04/cucumber-685704_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "pepino-kimchi",
+      "name": "Pepino kimchi",
+      "image": "https://cdn.pixabay.com/photo/2013/02/06/20/43/cucumber-78789_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "rucula",
+      "name": "Rúcula",
+      "image": "https://cdn.pixabay.com/photo/2016/12/02/11/08/lambs-lettuce-1877551_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "wakame",
+      "name": "Wakame",
+      "image": "https://cdn.pixabay.com/photo/2017/07/13/06/08/seaweed-2499345_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "zanahoria",
+      "name": "Zanahoria",
+      "image": "https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "sesamo",
+      "name": "Sésamo",
+      "image": "https://cdn.pixabay.com/photo/2014/04/05/11/39/sesame-316590_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "pina",
+      "name": "Piña",
+      "image": "https://cdn.pixabay.com/photo/2015/02/14/18/10/pineapple-636562_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "anacardos",
+      "name": "Anacardos",
+      "image": "https://cdn.pixabay.com/photo/2016/07/28/20/32/cashew-cores-1549580_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "aguacate",
+      "name": "Aguacate",
+      "image": "https://cdn.pixabay.com/photo/2015/09/09/20/17/avocado-933060_1280.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "huevo",
+      "name": "Huevo",
+      "image": "https://cdn.pixabay.com/photo/2018/07/09/18/26/egg-3526796_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
+      "slug": "tobiko",
+      "name": "Tobiko",
+      "image": "https://cdn.pixabay.com/photo/2012/03/01/00/36/roe-19734_960_720.jpg",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
     }
   ]
 }
