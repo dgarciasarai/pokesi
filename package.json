@@ -8,11 +8,6 @@
     "start:client": "cd client && parcel --https index.html",
     "start:server": "cd server && json-server data.json"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "linters": {
       "client/**/*.css": [
