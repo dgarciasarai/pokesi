@@ -1,6 +1,23 @@
+@font-face {
+    font-family: bebas;
+    src: url(./fonts/BebasNeue-Regular.otf), url(./fonts/BebasNeue-Regular.ttf);
+    font-weight: bold;
+}
+
+body {
+    color: #43485b;
+}
+
 .header {
     background-color: #69cb91;
     padding: 30px;
+    text-align: center;
+    font-size: 25pt;
+    font-family: "bebas";
+}
+
+.header-si {
+    color: white;
 }
 
 .ingredients {
@@ -20,4 +37,8 @@
     max-width: 50px;
     margin-right: 14px;
     border-radius: 10px;
+}
+
+.ingredient-name {
+    font-weight: 500;
 }
