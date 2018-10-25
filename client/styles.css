@@ -33,12 +33,17 @@ body {
     margin: 40px 0px;
 }
 
-.ingredient-image {
+.ingredient__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ingredient__image {
     max-width: 50px;
     margin-right: 14px;
     border-radius: 10px;
 }
 
-.ingredient-name {
+.ingredient__name {
     font-weight: 500;
 }

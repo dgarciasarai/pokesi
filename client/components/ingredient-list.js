@@ -1,4 +1,5 @@
 import { h } from 'hyperapp'
+import Link from './link'
 
 function IngredientList (state, actions) {
   if (state.ingredients && !state.ingredients.length) {
@@ -12,8 +13,10 @@ function IngredientList (state, actions) {
         <p>Selecciona tus ingredientes</p>
         <ul class="ingredients-list">{state.ingredients.map(ingredient =>
             <li class="ingredient-item">
-              <img class="ingredient-image" src={ingredient.image}/>
-              <span class="ingredient-name">{ingredient.name}</span>
+              <Link actions={actions} class="ingredient__link" href={`/ingredients/${ingredient.slug}`}>
+                <img class="ingredient__image" src={ingredient.image}/>
+                <span class="ingredient__name">{ingredient.name}</span>
+              </Link>
             </li>
           )}</ul>
       </div>
