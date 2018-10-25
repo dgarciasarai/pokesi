@@ -3,5 +3,9 @@ const goTo = pathname => state => {
   return { route: { pathname } }
 };
 
-export { goTo };
+const updatePathname = pathname => () => {
+  return { route: { pathname } }
+};
+
+export { goTo, updatePathname };
 export default goTo;
