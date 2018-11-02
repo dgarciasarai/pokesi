@@ -29,21 +29,45 @@ body {
     padding-inline-start: 0;
 }
 
-.ingredients-list > li {
+.ingredients-list > .ingredient-item {
     margin: 40px 0px;
+}
+
+.ingredient-item div.ingredient-cell {
+    vertical-align: middle;
 }
 
 .ingredient__link {
   color: inherit;
   text-decoration: none;
+  display: flex;
+}
+
+.ingredient__allergens {
+    margin-right: 8px;
+    width: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredient__gluten {
+    width: 100%;
 }
 
 .ingredient__image {
-    max-width: 50px;
+    width: 50px;
+    height: 50px;
     margin-right: 14px;
     border-radius: 10px;
 }
 
 .ingredient__name {
     font-weight: 500;
+}
+
+.ingredient__weight {
+    font-size: 11pt;
+    color: #7c86a8;
+    display: block;
+    margin-top: 10px;
 }

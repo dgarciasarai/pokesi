@@ -1,5 +1,6 @@
 import { h } from 'hyperapp'
 import Link from './link'
+import gluten from '../img/gluten.png'
 
 function IngredientList (state, actions) {
   if (state.ingredients && !state.ingredients.length) {
@@ -14,8 +15,14 @@ function IngredientList (state, actions) {
         <ul class="ingredients-list">{state.ingredients.map(ingredient =>
             <li class="ingredient-item">
               <Link actions={actions} class="ingredient__link" href={`/ingredients/${ingredient.slug}`}>
+                <div class="ingredient__allergens">
+                  {ingredient.hasGluten && <img class="ingredient__gluten" src={gluten} />}
+                </div>
                 <img class="ingredient__image" src={ingredient.image}/>
-                <span class="ingredient__name">{ingredient.name}</span>
+                <div class="ingredient-cell">
+                  <span class="ingredient__name">{ingredient.name}</span>
+                  <span class="ingredient__weight">{ingredient.weight}g</span>
+                </div>
               </Link>
             </li>
           )}</ul>
