@@ -23,9 +23,17 @@ function IngredientList (state, actions) {
                   <span class="ingredient__name">{ingredient.name}</span>
                   <span class="ingredient__weight">{ingredient.weight}g</span>
                 </div>
+                <div class="ingredient-quantity">
+                  <span class="quantity__minus">-</span>
+                  <span class="quantity__total">0</span>
+                  <span class="quantity__more">+</span>
+                </div>
               </Link>
             </li>
           )}</ul>
+      </div>
+      <div class="ingridients-resume">
+        <a class="ingridients-btn-resume">Resumen</a>
       </div>
     </div>
   )

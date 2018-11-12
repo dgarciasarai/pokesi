@@ -27,6 +27,7 @@ body {
 .ingredients-list {
     list-style-type: none;
     padding-inline-start: 0;
+    padding-bottom: 60px;
 }
 
 .ingredients-list > .ingredient-item {
@@ -70,4 +71,40 @@ body {
     color: #7c86a8;
     display: block;
     margin-top: 10px;
+}
+
+.ingredient-quantity {
+    display: flex;
+    align-items: center;
+    right: 40px;
+    position: absolute;
+    font-size: 20pt;
+}
+
+.quantity__total{
+    padding: 0 20px;
+}
+
+.quantity__minus, .quantity__more {
+    color: #7c86a8;
+}
+
+.ingridients-resume {
+    left: 0;
+    bottom: 0;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.ingridients-btn-resume {
+    color: #fff;
+    background: #69cb91;
+    padding: 10px 120px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14pt;
 }
