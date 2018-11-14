@@ -33,7 +33,7 @@ function IngredientList (state, actions) {
           )}</ul>
       </div>
       <div class="ingridients-resume">
-        <a class="ingridients-btn-resume">Resumen</a>
+        <Link actions={actions} class="resume__link" href={`/summary`}>Resumen</Link>
       </div>
     </div>
   )

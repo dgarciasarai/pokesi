@@ -100,11 +100,12 @@ body {
     text-align: center;
 }
 
-.ingridients-btn-resume {
+.resume__link {
     color: #fff;
     background: #69cb91;
     padding: 10px 120px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 14pt;
+    text-decoration: none;
 }
