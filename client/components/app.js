@@ -1,6 +1,7 @@
 import IngredientDetail from './ingredient-detail'
 import IngredientList from './ingredient-list'
 import Summary from './summary'
+import { listenToHistoryEvents } from '../to-do/navigation'
 
 let locationListener;
 
@@ -16,7 +17,7 @@ function app(state, actions) {
 
   if (!locationListener) {
     locationListener = () => actions.updatePathname(window.location.pathname)
-    window.addEventListener('popstate', locationListener);
+    listenToHistoryEvents(locationListener)
   }
 
   return view(state, actions)

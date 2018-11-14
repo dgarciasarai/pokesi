@@ -1,5 +1,7 @@
+import { saveNewHistoryState } from '../to-do/navigation'
+
 const goTo = pathname => state => {
-  window.history.pushState(null, null, pathname)
+  saveNewHistoryState(pathname)
   return { route: { pathname } }
 };
 
