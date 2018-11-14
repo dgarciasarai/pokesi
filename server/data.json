@@ -1,23 +1,6 @@
 {
   "ingredients": [
     {
-      "slug": "arroz",
-      "image": "http://localhost:3000/arroz.jpg",
-      "name": "Arroz",
-      "calories": {
-        "kcal": "237",
-        "kj": "894"
-      },
-      "composition": {
-        "fats": "24",
-        "carbs": "17",
-        "proteins": "4"
-      },
-      "hasGluten": true,
-      "weight": "80"
-    },
-
-    {
       "slug": "quinoa",
       "image": "http://localhost:3000/quinoa.jpg",
       "name": "Quinoa",
@@ -32,23 +15,6 @@
       },
       "hasGluten": true,
       "weight": "43"
-    },
-
-    {
-      "slug": "kale",
-      "image": "http://localhost:3000/kale.jpg",
-      "name": "Kale",
-      "calories": {
-        "kcal": "237",
-        "kj": "894"
-      },
-      "composition": {
-        "fats": "24",
-        "carbs": "17",
-        "proteins": "4"
-      },
-      "hasGluten": true,
-      "weight": "48"
     },
 
     {
@@ -81,7 +47,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "65"
     },
 
@@ -98,7 +64,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "55"
     },
 
@@ -115,7 +81,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -137,6 +103,23 @@
     },
 
     {
+      "slug": "arroz",
+      "image": "http://localhost:3000/arroz.jpg",
+      "name": "Arroz",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "80"
+    },
+
+    {
       "slug": "leche-de-tigre",
       "image": "http://localhost:3000/leche-de-tigre.jpg",
       "name": "Leche de tigre",
@@ -149,7 +132,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "23"
     },
 
@@ -166,7 +149,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -183,7 +166,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -200,7 +183,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -217,7 +200,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -234,7 +217,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -251,7 +234,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -268,8 +251,25 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
+    },
+
+    {
+      "slug": "kale",
+      "image": "http://localhost:3000/kale.jpg",
+      "name": "Kale",
+      "calories": {
+        "kcal": "237",
+        "kj": "894"
+      },
+      "composition": {
+        "fats": "24",
+        "carbs": "17",
+        "proteins": "4"
+      },
+      "hasGluten": true,
+      "weight": "48"
     },
 
     {
@@ -285,7 +285,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -302,7 +302,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -336,7 +336,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -353,7 +353,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -421,7 +421,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
@@ -438,7 +438,7 @@
         "carbs": "17",
         "proteins": "4"
       },
-      "hasGluten": true,
+      "hasGluten": false,
       "weight": "80"
     },
 
