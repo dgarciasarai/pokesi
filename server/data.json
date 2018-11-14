@@ -2,8 +2,8 @@
   "ingredients": [
     {
       "slug": "arroz",
+      "image": "http://localhost:3000/arroz.jpg",
       "name": "Arroz",
-      "image": "https://cdn.pixabay.com/photo/2014/10/22/18/43/rice-498688_1280.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -19,8 +19,8 @@
 
     {
       "slug": "quinoa",
+      "image": "http://localhost:3000/quinoa.jpg",
       "name": "Quinoa",
-      "image": "https://cdn.pixabay.com/photo/2014/07/30/18/37/quinoa-405538_1280.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -36,8 +36,8 @@
 
     {
       "slug": "kale",
+      "image": "http://localhost:3000/kale.jpg",
       "name": "Kale",
-      "image": "https://cdn.pixabay.com/photo/2013/02/21/19/01/cabbage-84455_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -53,8 +53,8 @@
 
     {
       "slug": "hawaiian-bamboo-rice",
+      "image": "http://localhost:3000/hawaiian-bamboo-rice.jpg",
       "name": "Hawaiian bamboo rice",
-      "image": "https://cdn.pixabay.com/photo/2016/07/29/10/43/agriculture-1552390_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -70,8 +70,8 @@
 
     {
       "slug": "atun",
+      "image": "http://localhost:3000/atun.jpg",
       "name": "Atún",
-      "image": "https://cdn.pixabay.com/photo/2017/02/05/11/48/sushi-2039735_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -87,8 +87,8 @@
 
     {
       "slug": "salmon",
+      "image": "http://localhost:3000/salmon.jpg",
       "name": "Salmón",
-      "image": "https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_1280.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -104,8 +104,8 @@
 
     {
       "slug": "langostino",
+      "image": "http://localhost:3000/langostino.jpg",
       "name": "Langostino",
-      "image": "https://cdn.pixabay.com/photo/2017/05/21/13/02/shrimp-2331239_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -121,8 +121,8 @@
 
     {
       "slug": "mix-verduras",
+      "image": "http://localhost:3000/mix-verduras.jpg",
       "name": "Mix verduras",
-      "image": "https://cdn.pixabay.com/photo/2017/09/16/19/21/salad-2756467_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -138,8 +138,8 @@
 
     {
       "slug": "leche-de-tigre",
+      "image": "http://localhost:3000/leche-de-tigre.jpg",
       "name": "Leche de tigre",
-      "image": "https://cdn.pixabay.com/photo/2016/08/11/23/25/glass-1587258_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -155,8 +155,8 @@
 
     {
       "slug": "ponzu-lima",
+      "image": "http://localhost:3000/ponzu-lima.jpg",
       "name": "Ponzu lima",
-      "image": "https://cdn.pixabay.com/photo/2017/03/10/15/15/lime-2133091_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -172,8 +172,8 @@
 
     {
       "slug": "sweet-chili-lima",
+      "image": "http://localhost:3000/sweet-chili-lima.jpg",
       "name": "Sweet chili-lima",
-      "image": "https://cdn.pixabay.com/photo/2014/10/22/21/49/chili-499062_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -189,8 +189,8 @@
 
     {
       "slug": "sriracha-aioli",
+      "image": "http://localhost:3000/sriracha-aioli.jpg",
       "name": "Sriracha aioli",
-      "image": "https://cdn.pixabay.com/photo/2016/06/10/14/33/aioli-1448217_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -206,8 +206,8 @@
 
     {
       "slug": "boniato",
+      "image": "http://localhost:3000/boniato.jpg",
       "name": "Boniato",
-      "image": "https://cdn.pixabay.com/photo/2016/11/06/23/28/yam-1804451_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -223,8 +223,8 @@
 
     {
       "slug": "cebolla",
+      "image": "http://localhost:3000/cebolla.jpg",
       "name": "Cebolla",
-      "image": "https://cdn.pixabay.com/photo/2015/02/24/15/38/onion-647525_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -240,8 +240,8 @@
 
     {
       "slug": "cebolla-roja",
+      "image": "http://localhost:3000/cebolla-roja.jpg",
       "name": "Cebolla",
-      "image": "https://cdn.pixabay.com/photo/2014/10/22/21/53/red-onions-vegetables-499066_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -257,8 +257,8 @@
 
     {
       "slug": "edamame",
+      "image": "http://localhost:3000/edamame.jpg",
       "name": "Edamame",
-      "image": "https://cdn.pixabay.com/photo/2016/10/23/09/32/japanese-food-1762480_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -274,8 +274,8 @@
 
     {
       "slug": "pepino",
+      "image": "http://localhost:3000/pepino.jpg",
       "name": "Pepino",
-      "image": "https://cdn.pixabay.com/photo/2015/03/23/08/04/cucumber-685704_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -291,8 +291,8 @@
 
     {
       "slug": "pepino-kimchi",
+      "image": "http://localhost:3000/pepino-kimchi.jpg",
       "name": "Pepino kimchi",
-      "image": "https://cdn.pixabay.com/photo/2013/02/06/20/43/cucumber-78789_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -308,8 +308,8 @@
 
     {
       "slug": "rucula",
+      "image": "http://localhost:3000/rucula.jpg",
       "name": "Rúcula",
-      "image": "https://cdn.pixabay.com/photo/2016/12/02/11/08/lambs-lettuce-1877551_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -325,8 +325,8 @@
 
     {
       "slug": "wakame",
+      "image": "http://localhost:3000/wakame.jpg",
       "name": "Wakame",
-      "image": "https://cdn.pixabay.com/photo/2017/07/13/06/08/seaweed-2499345_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -342,8 +342,8 @@
 
     {
       "slug": "zanahoria",
+      "image": "http://localhost:3000/zanahoria.jpg",
       "name": "Zanahoria",
-      "image": "https://cdn.pixabay.com/photo/2015/03/14/14/00/carrots-673184_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -359,8 +359,8 @@
 
     {
       "slug": "sesamo",
+      "image": "http://localhost:3000/sesamo.jpg",
       "name": "Sésamo",
-      "image": "https://cdn.pixabay.com/photo/2014/04/05/11/39/sesame-316590_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -376,8 +376,8 @@
 
     {
       "slug": "pina",
+      "image": "http://localhost:3000/pina.jpg",
       "name": "Piña",
-      "image": "https://cdn.pixabay.com/photo/2015/02/14/18/10/pineapple-636562_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -393,8 +393,8 @@
 
     {
       "slug": "anacardos",
+      "image": "http://localhost:3000/anacardos.jpg",
       "name": "Anacardos",
-      "image": "https://cdn.pixabay.com/photo/2016/07/28/20/32/cashew-cores-1549580_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -410,8 +410,8 @@
 
     {
       "slug": "aguacate",
+      "image": "http://localhost:3000/aguacate.jpg",
       "name": "Aguacate",
-      "image": "https://cdn.pixabay.com/photo/2015/09/09/20/17/avocado-933060_1280.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -427,8 +427,8 @@
 
     {
       "slug": "huevo",
+      "image": "http://localhost:3000/huevo.jpg",
       "name": "Huevo",
-      "image": "https://cdn.pixabay.com/photo/2018/07/09/18/26/egg-3526796_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
@@ -444,8 +444,8 @@
 
     {
       "slug": "tobiko",
+      "image": "http://localhost:3000/tobiko.jpg",
       "name": "Tobiko",
-      "image": "https://cdn.pixabay.com/photo/2012/03/01/00/36/roe-19734_960_720.jpg",
       "calories": {
         "kcal": "237",
         "kj": "894"
