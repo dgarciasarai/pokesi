@@ -5,7 +5,7 @@
   "scripts": {
     "lint:css": "stylelint client/**/*.css client/**/*.html",
     "lint:js": "prettier-standard client/**/*.js server/**/*.js",
-    "start:client": "cd client && parcel index.html --out-dir ../.tmp/parcel/out --cache-dir ../.tmp/parcel/tmp",
+    "start:client": "cd client && parcel index.html --no-hmr --out-dir ../.tmp/parcel/out --cache-dir ../.tmp/parcel/tmp",
     "start:server": "cd server && json-server data.json --static ./static"
   },
   "lint-staged": {
