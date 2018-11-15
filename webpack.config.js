@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  mode: 'development',
   entry: {
     index: './client/index.js',
     sw: './client/sw.js'

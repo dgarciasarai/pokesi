@@ -8,6 +8,13 @@ body {
     color: #43485b;
 }
 
+.quantity__minus,
+.quantity__more,
+.ingredient__weight,
+.ingredient-detail-table {
+    color: #7c86a8;
+}
+
 .header {
     background-color: #69cb91;
     padding: 30px;
@@ -68,13 +75,11 @@ body {
 
 .ingredient__weight {
     font-size: 11pt;
-    color: #7c86a8;
     display: block;
     margin-top: 10px;
 }
 
 .ingredient-quantity {
-    display: flex;
     align-items: center;
     right: 40px;
     position: absolute;
@@ -83,10 +88,6 @@ body {
 
 .quantity__total{
     padding: 0 20px;
-}
-
-.quantity__minus, .quantity__more {
-    color: #7c86a8;
 }
 
 .ingridients-resume {
@@ -108,4 +109,59 @@ body {
     font-weight: bold;
     font-size: 14pt;
     text-decoration: none;
+}
+
+.ingredient-detail {
+    display: flex;
+    margin: 40px;
+}
+
+.ingredient-detail-table > p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.ingredient__values {
+    float: right;
+}
+
+div.ingredient-detail-table > p:nth-child(even) {
+    background-color: #69cb9111;
+}
+
+.ingredient__detail__image {
+    height: 200px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.ingredient__detail__image > img {
+    width: 100%;
+    transform: translateY(-70px);
+}
+
+.header-detail {
+    background-color: #69cb91;
+    padding: 15px;
+    text-align: center;
+    font-size: 20pt;
+    font-family: "bebas";
+}
+
+.header-detail-back-arrow {
+    width: 7%;
+    filter: opacity(75%);
+    position: absolute;
+    left: 10px;
+}
+
+.ingredient__detail__allergens {
+    text-align: center;
+    color: #ff7700;
+}
+
+.ingredient__detail__allergens img {
+    width: 10px;
+    margin-right: 10px;
 }
