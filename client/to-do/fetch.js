@@ -4,15 +4,22 @@
  * @param {string} cacheVersion
  */
 async function respondWithCachedContent (event, cacheVersion) {
+  console.log(event.request)
+
   const cache = await caches.open(cacheVersion)
   const cachedResponse = await cache.match(event.request)
-  const responsePromise = fetch(event.request)
+  const fetchResponsePromise = fetch(event.request)
+  const response = cachedResponse || await fetchResponsePromise
 
-  responsePromise.then(response => {
-    cache.add(response.url, response)
-  })
+  if (cachedResponse) {
+    fetchResponsePromise.then(fetchResponse => {
+      cache.add(fetchResponse.url, fetchResponse)
+    })
+  } else {
+    console.log(response)
+  }
 
-  return cachedResponse || responsePromise
+  return response
 }
 
 export {
