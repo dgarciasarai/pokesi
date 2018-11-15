@@ -1,6 +1,14 @@
 const INGREDIENTS_URL = 'http://localhost:3000/ingredients'
 
 /**
+ * Adds client base code to cache
+ * @param {Cache} cache
+ */
+async function addClientToCache(cache) {
+  await cache.add('/')
+}
+
+/**
  * Add all ingredients to cache
  * @param {Cache} cache
  */
@@ -18,5 +26,6 @@ async function addIngredientsToCache(cache) {
 }
 
 export {
+  addClientToCache,
   addIngredientsToCache
 }

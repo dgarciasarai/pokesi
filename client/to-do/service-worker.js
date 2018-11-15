@@ -1,5 +1,5 @@
 import 'babel-polyfill'
-import { addIngredientsToCache } from './cache'
+import { addClientToCache, addIngredientsToCache } from './cache'
 
 /**
  * Register the service worker placed in /sw.js route
@@ -26,6 +26,7 @@ function handleServiceWorkerInstalled(event, cacheVersion) {
 
   event.waitUntil(
     caches.open(cacheVersion).then(async (cache) => {
+      await addClientToCache(cache)
       await addIngredientsToCache(cache)
     })
   )
