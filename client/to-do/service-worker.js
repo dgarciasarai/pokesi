@@ -1,5 +1,6 @@
 import 'babel-polyfill'
 import { addClientToCache, addIngredientsToCache } from './cache'
+import { respondWithCachedContent } from './fetch'
 
 /**
  * Register the service worker placed in /sw.js route
@@ -56,7 +57,11 @@ function handleServiceWorkerMessage(event, cacheVersion) {
  * @param {string} cacheVersion
  */
 function handleServiceWorkerFetch(event, cacheVersion) {
-  // console.log(event)
+  if (event.request.method === 'GET') {
+    event.respondWith(
+      respondWithCachedContent(event, cacheVersion)
+    )
+  }
 }
 
 export {
