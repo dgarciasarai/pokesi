@@ -1,3 +1,10 @@
+import './index.html'
+import './404.html'
+import './sanitize.css'
+import './styles.css'
+import './fonts/BebasNeue-Regular.otf'
+import './fonts/BebasNeue-Regular.ttf'
+
 import 'babel-polyfill'
 import { h, app } from 'hyperapp'
 

@@ -5,7 +5,7 @@
   "scripts": {
     "lint:css": "stylelint client/**/*.css client/**/*.html",
     "lint:js": "prettier-standard client/**/*.js server/**/*.js",
-    "start:client": "cd client && parcel index.html --no-hmr --out-dir ../.tmp/parcel/out --cache-dir ../.tmp/parcel/tmp",
+    "start:client": "webpack-dev-server",
     "start:server": "cd server && json-server data.json --static ./static"
   },
   "lint-staged": {
@@ -24,6 +24,17 @@
       ]
     }
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  },
   "contributors": [
     {
       "name": "Pablo Molina"
@@ -39,10 +50,18 @@
     "hyperapp": "^1.2.9",
     "json-server": "^0.14.0",
     "lint-staged": "^7.3.0",
-    "parcel-bundler": "^1.10.3",
     "prettier-standard": "^8.0.1",
-    "sanitize.css": "^8.0.0",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "file-loader": "^2.0.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
