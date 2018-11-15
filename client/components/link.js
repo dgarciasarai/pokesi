@@ -1,19 +1,25 @@
 import { h } from 'hyperapp'
 
-const linkClickHandler = (goTo, href) => () => {
+const linkClickHandler = (actions, href) => () => {
+  if (href === goBack) {
+    actions.goBack();
+  } else {
+    actions.goTo(href);
+  }
   event.preventDefault();
   event.stopImmediatePropagation();
-  goTo(href);
 };
 
 function Link(props, children) {
-  const goTo = props.actions.goTo;
+  const actions = props.actions;
   const href = props.href;
 
-  return <a {...props} onclick={linkClickHandler(goTo, href)}>
+  return <a {...props} onclick={linkClickHandler(actions, href)}>
     {children}
   </a>
 }
 
-export { Link }
+const goBack = "navigateBack"
+
+export { Link, goBack }
 export default Link

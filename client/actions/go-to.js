@@ -9,5 +9,10 @@ const updatePathname = pathname => () => {
   return { route: { pathname } }
 };
 
-export { goTo, updatePathname };
+const goBack = () => () => {
+  window.history.back();
+  return {};
+}
+
+export { goTo, updatePathname, goBack };
 export default goTo;

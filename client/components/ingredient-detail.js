@@ -1,5 +1,5 @@
 import { h } from 'hyperapp'
-import Link from './link'
+import { Link, goBack } from './link'
 import backArrow from '../img/back.png'
 import gluten from '../img/gluten.png'
 
@@ -16,7 +16,7 @@ function IngredientDetail (state, actions) {
 
   return <div>
     <div class="header-detail">
-      <Link actions={actions} href={`/ingredients`}>
+      <Link actions={actions} href={goBack}>
         <img src={backArrow} class="header-detail-back-arrow"/>
       </Link>
       <span>{ingredient.name}</span>

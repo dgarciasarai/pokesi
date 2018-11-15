@@ -12,11 +12,12 @@ import { app as appView } from './components/app'
 import initialState from './utils/initial-state'
 import { registerServiceWorker } from './to-do/service-worker'
 
-import { goTo, updatePathname } from './actions/go-to';
+import { goTo, goBack, updatePathname } from './actions/go-to';
 import { loadIngredients, loadIngredientsSuccess } from './actions/ingredients'
 
 const actions = {
   goTo,
+  goBack,
   updatePathname,
   loadIngredients,
   loadIngredientsSuccess
