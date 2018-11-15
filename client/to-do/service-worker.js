@@ -5,49 +5,54 @@ function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
       .then(registration => {
-        console.log('ServiceWorker registration successful: ', registration)
+        console.log('ServiceWorker registered')
       })
       .catch(error => {
-        console.error('ServiceWorker registration failed: ', error)
+        console.error('ServiceWorker failed to register', error)
       })
   }
 }
 
 /**
- * Listen to various serviceWorker events
- * @param {Window} windowClient
- */
-function listenToServiceWorkerEvents(windowClient) {
-  windowClient.addEventListener('install', _handleServiceWorkerInstalled)
-  windowClient.addEventListener('activate', _handleServiceWorkerActivated)
-  windowClient.addEventListener('fetch', _handleServiceWorkerFetch)
-}
-
-/**
  * Executed when the service worker has been installed
  * @param {InstallEvent} event
+ * @param {string} cacheVersion
  */
-function _handleServiceWorkerInstalled(event) {
-  console.log(event)
+function handleServiceWorkerInstalled(event, cacheVersion) {
+  console.log(`ServiceWorker ${cacheVersion} installed`)
 }
 
 /**
  * Executed when the service worker has been activated
  * @param {ExtendableEvent} event
+ * @param {string} cacheVersion
  */
-function _handleServiceWorkerActivated(event) {
+function handleServiceWorkerActivated(event, cacheVersion) {
+  console.log(`ServiceWorker ${cacheVersion} activated`)
+}
+
+/**
+ * Executed when the service worker has been activated
+ * @param {MessageEvent} event
+ * @param {string} cacheVersion
+ */
+function handleServiceWorkerMessage(event, cacheVersion) {
   console.log(event)
 }
 
 /**
  * Executed when the service worker has been activated
  * @param {FetchEvent} event
+ * @param {string} cacheVersion
  */
-function _handleServiceWorkerFetch(event) {
-  console.log(event)
+function handleServiceWorkerFetch(event, cacheVersion) {
+  // console.log(event)
 }
 
 export {
   registerServiceWorker,
-  listenToServiceWorkerEvents
+  handleServiceWorkerInstalled,
+  handleServiceWorkerActivated,
+  handleServiceWorkerMessage,
+  handleServiceWorkerFetch
 }

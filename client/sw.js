@@ -1,3 +1,15 @@
-import { listenToServiceWorkerEvents } from './to-do/service-worker'
+import {
+  handleServiceWorkerInstalled,
+  handleServiceWorkerActivated,
+  handleServiceWorkerMessage,
+  handleServiceWorkerFetch
+} from './to-do/service-worker'
 
-listenToServiceWorkerEvents(self)
+const CACHE_VERSION = '1'
+
+self.addEventListener('install', event => handleServiceWorkerInstalled(event, CACHE_VERSION))
+self.addEventListener('activate', event => handleServiceWorkerActivated(event, CACHE_VERSION))
+self.addEventListener('message', event => handleServiceWorkerMessage(event, CACHE_VERSION))
+self.addEventListener('fetch', event => handleServiceWorkerFetch(event, CACHE_VERSION))
+
+console.log(`ServiceWorker ${CACHE_VERSION}`)
