@@ -2,7 +2,7 @@
   "ingredients": [
     {
       "slug": "quinoa",
-      "image": "http://localhost:3000/quinoa.jpg",
+      "image": "/quinoa.jpg",
       "name": "Quinoa",
       "calories": {
         "kcal": "237",
@@ -19,7 +19,7 @@
 
     {
       "slug": "hawaiian-bamboo-rice",
-      "image": "http://localhost:3000/hawaiian-bamboo-rice.jpg",
+      "image": "/hawaiian-bamboo-rice.jpg",
       "name": "Hawaiian bamboo rice",
       "calories": {
         "kcal": "237",
@@ -36,7 +36,7 @@
 
     {
       "slug": "atun",
-      "image": "http://localhost:3000/atun.jpg",
+      "image": "/atun.jpg",
       "name": "Atún",
       "calories": {
         "kcal": "237",
@@ -53,7 +53,7 @@
 
     {
       "slug": "salmon",
-      "image": "http://localhost:3000/salmon.jpg",
+      "image": "/salmon.jpg",
       "name": "Salmón",
       "calories": {
         "kcal": "237",
@@ -70,7 +70,7 @@
 
     {
       "slug": "langostino",
-      "image": "http://localhost:3000/langostino.jpg",
+      "image": "/langostino.jpg",
       "name": "Langostino",
       "calories": {
         "kcal": "237",
@@ -87,7 +87,7 @@
 
     {
       "slug": "mix-verduras",
-      "image": "http://localhost:3000/mix-verduras.jpg",
+      "image": "/mix-verduras.jpg",
       "name": "Mix verduras",
       "calories": {
         "kcal": "237",
@@ -104,7 +104,7 @@
 
     {
       "slug": "arroz",
-      "image": "http://localhost:3000/arroz.jpg",
+      "image": "/arroz.jpg",
       "name": "Arroz",
       "calories": {
         "kcal": "237",
@@ -121,7 +121,7 @@
 
     {
       "slug": "leche-de-tigre",
-      "image": "http://localhost:3000/leche-de-tigre.jpg",
+      "image": "/leche-de-tigre.jpg",
       "name": "Leche de tigre",
       "calories": {
         "kcal": "237",
@@ -138,7 +138,7 @@
 
     {
       "slug": "ponzu-lima",
-      "image": "http://localhost:3000/ponzu-lima.jpg",
+      "image": "/ponzu-lima.jpg",
       "name": "Ponzu lima",
       "calories": {
         "kcal": "237",
@@ -155,7 +155,7 @@
 
     {
       "slug": "sweet-chili-lima",
-      "image": "http://localhost:3000/sweet-chili-lima.jpg",
+      "image": "/sweet-chili-lima.jpg",
       "name": "Sweet chili-lima",
       "calories": {
         "kcal": "237",
@@ -172,7 +172,7 @@
 
     {
       "slug": "sriracha-aioli",
-      "image": "http://localhost:3000/sriracha-aioli.jpg",
+      "image": "/sriracha-aioli.jpg",
       "name": "Sriracha aioli",
       "calories": {
         "kcal": "237",
@@ -189,7 +189,7 @@
 
     {
       "slug": "boniato",
-      "image": "http://localhost:3000/boniato.jpg",
+      "image": "/boniato.jpg",
       "name": "Boniato",
       "calories": {
         "kcal": "237",
@@ -206,7 +206,7 @@
 
     {
       "slug": "cebolla",
-      "image": "http://localhost:3000/cebolla.jpg",
+      "image": "/cebolla.jpg",
       "name": "Cebolla",
       "calories": {
         "kcal": "237",
@@ -223,7 +223,7 @@
 
     {
       "slug": "cebolla-roja",
-      "image": "http://localhost:3000/cebolla-roja.jpg",
+      "image": "/cebolla-roja.jpg",
       "name": "Cebolla",
       "calories": {
         "kcal": "237",
@@ -240,7 +240,7 @@
 
     {
       "slug": "edamame",
-      "image": "http://localhost:3000/edamame.jpg",
+      "image": "/edamame.jpg",
       "name": "Edamame",
       "calories": {
         "kcal": "237",
@@ -257,7 +257,7 @@
 
     {
       "slug": "kale",
-      "image": "http://localhost:3000/kale.jpg",
+      "image": "/kale.jpg",
       "name": "Kale",
       "calories": {
         "kcal": "237",
@@ -274,7 +274,7 @@
 
     {
       "slug": "pepino",
-      "image": "http://localhost:3000/pepino.jpg",
+      "image": "/pepino.jpg",
       "name": "Pepino",
       "calories": {
         "kcal": "237",
@@ -291,7 +291,7 @@
 
     {
       "slug": "pepino-kimchi",
-      "image": "http://localhost:3000/pepino-kimchi.jpg",
+      "image": "/pepino-kimchi.jpg",
       "name": "Pepino kimchi",
       "calories": {
         "kcal": "237",
@@ -308,7 +308,7 @@
 
     {
       "slug": "rucula",
-      "image": "http://localhost:3000/rucula.jpg",
+      "image": "/rucula.jpg",
       "name": "Rúcula",
       "calories": {
         "kcal": "237",
@@ -325,7 +325,7 @@
 
     {
       "slug": "wakame",
-      "image": "http://localhost:3000/wakame.jpg",
+      "image": "/wakame.jpg",
       "name": "Wakame",
       "calories": {
         "kcal": "237",
@@ -342,7 +342,7 @@
 
     {
       "slug": "zanahoria",
-      "image": "http://localhost:3000/zanahoria.jpg",
+      "image": "/zanahoria.jpg",
       "name": "Zanahoria",
       "calories": {
         "kcal": "237",
@@ -359,7 +359,7 @@
 
     {
       "slug": "sesamo",
-      "image": "http://localhost:3000/sesamo.jpg",
+      "image": "/sesamo.jpg",
       "name": "Sésamo",
       "calories": {
         "kcal": "237",
@@ -376,7 +376,7 @@
 
     {
       "slug": "pina",
-      "image": "http://localhost:3000/pina.jpg",
+      "image": "/pina.jpg",
       "name": "Piña",
       "calories": {
         "kcal": "237",
@@ -393,7 +393,7 @@
 
     {
       "slug": "anacardos",
-      "image": "http://localhost:3000/anacardos.jpg",
+      "image": "/anacardos.jpg",
       "name": "Anacardos",
       "calories": {
         "kcal": "237",
@@ -410,7 +410,7 @@
 
     {
       "slug": "aguacate",
-      "image": "http://localhost:3000/aguacate.jpg",
+      "image": "/aguacate.jpg",
       "name": "Aguacate",
       "calories": {
         "kcal": "237",
@@ -427,7 +427,7 @@
 
     {
       "slug": "huevo",
-      "image": "http://localhost:3000/huevo.jpg",
+      "image": "/huevo.jpg",
       "name": "Huevo",
       "calories": {
         "kcal": "237",
@@ -444,7 +444,7 @@
 
     {
       "slug": "tobiko",
-      "image": "http://localhost:3000/tobiko.jpg",
+      "image": "/tobiko.jpg",
       "name": "Tobiko",
       "calories": {
         "kcal": "237",

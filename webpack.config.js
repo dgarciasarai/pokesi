@@ -39,6 +39,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, '.tmp', 'webpack'),
     inline: false,
-    hot: false
+    hot: false,
+    host: '0.0.0.0'
   }
 }

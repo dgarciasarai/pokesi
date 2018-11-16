@@ -6,7 +6,7 @@
     "lint:css": "stylelint client/**/*.css client/**/*.html",
     "lint:js": "prettier-standard client/**/*.js server/**/*.js",
     "start:client": "webpack-dev-server",
-    "start:server": "cd server && json-server data.json --static ./static"
+    "start:server": "cd server && json-server data.json --host 0.0.0.0 --static ./static"
   },
   "lint-staged": {
     "linters": {

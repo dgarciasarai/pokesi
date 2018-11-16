@@ -1,4 +1,5 @@
 import api from '../utils/api'
+import { SERVER_URL } from '../utils/constants';
 
 const loadIngredients = () => async (state, actions) => {
   try {
@@ -13,7 +14,11 @@ const loadIngredients = () => async (state, actions) => {
 };
 
 const loadIngredientsSuccess = ingredients => () => {
-  return { ingredients }
+  return {
+    ingredients: ingredients.map(ingredient => Object.assign({}, ingredient, {
+      image: `${SERVER_URL}${ingredient.image}`
+    }))
+  }
 };
 
 export {
