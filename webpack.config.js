@@ -19,7 +19,8 @@ module.exports = {
         use: ['babel-loader']
       },
       {
-        test: /\.(html|css|png|otf|ttf)$/,
+        test: /\.(json|ico|html|css|png|otf|ttf)$/,
+        type: 'javascript/auto',
         use: [
           {
             loader: 'file-loader',
@@ -36,6 +37,8 @@ module.exports = {
     extensions: ['*', '.js']
   },
   devServer: {
-    contentBase: path.resolve(__dirname, '.tmp', 'webpack')
+    contentBase: path.resolve(__dirname, '.tmp', 'webpack'),
+    inline: false,
+    hot: false
   }
 }

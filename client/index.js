@@ -1,13 +1,7 @@
-import './index.html'
-import './404.html'
-import './sanitize.css'
-import './styles.css'
-import './fonts/BebasNeue-Regular.otf'
-import './fonts/BebasNeue-Regular.ttf'
-
 import 'babel-polyfill'
 import { h, app } from 'hyperapp'
 
+import './utils/assets'
 import { app as appView } from './components/app'
 import initialState from './utils/initial-state'
 import { registerServiceWorker } from './to-do/service-worker'
