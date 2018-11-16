@@ -28,7 +28,10 @@ body {
 }
 
 .ingredients {
-    margin: 30px;
+  max-width: 480px;
+  margin: 1em auto;
+  padding: 1em 1em 1em 2em;
+  position: relative;
 }
 
 .ingredients-list {
@@ -150,7 +153,7 @@ div.ingredient-detail-table > p:nth-child(even) {
 }
 
 .header-detail-back-arrow {
-    width: 7%;
+    width: 1em;
     filter: opacity(75%);
     position: absolute;
     left: 10px;

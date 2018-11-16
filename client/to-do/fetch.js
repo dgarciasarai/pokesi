@@ -26,6 +26,12 @@ async function respondWithCachedContent (event, cacheVersion) {
     }
 
     cache.put(event.request.url, response.clone())
+  } else {
+    fetch(event.request.url).then(fetchResponse => {
+      if (fetchResponse.status < 400) {
+        cache.put(event.request.url, fetchResponse)
+      }
+    })
   }
 
   return response

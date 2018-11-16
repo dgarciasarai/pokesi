@@ -6,10 +6,11 @@ import gluten from '../img/gluten.png'
 function IngredientDetail (state, actions) {
   if (state.ingredients && !state.ingredients.length) {
     actions.loadIngredients()
+    return ''
   }
 
   const ingredientSlug = state.route.pathname.split("/").pop()
-  
+
   const ingredient = state.ingredients.find(
     ingredient => ingredient.slug === ingredientSlug
   );
@@ -17,7 +18,7 @@ function IngredientDetail (state, actions) {
   return <div>
     <div class="header-detail">
       <Link actions={actions} href={goBack}>
-        <img src={backArrow} class="header-detail-back-arrow"/>
+        <img alt="Volver" src={backArrow} class="header-detail-back-arrow"/>
       </Link>
       <span>{ingredient.name}</span>
     </div>

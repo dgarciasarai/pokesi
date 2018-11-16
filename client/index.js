@@ -17,5 +17,5 @@ const actions = {
   loadIngredientsSuccess
 };
 
-app(initialState, actions, appView, document.body)
+app(initialState, actions, appView, document.getElementById('app'))
 registerServiceWorker()

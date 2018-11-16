@@ -5,7 +5,7 @@ import {
   handleServiceWorkerFetch
 } from './to-do/service-worker'
 
-const CACHE_VERSION = '1'
+const CACHE_VERSION = '2'
 
 self.addEventListener('install', event => handleServiceWorkerInstalled(event, CACHE_VERSION))
 self.addEventListener('activate', event => handleServiceWorkerActivated(event, CACHE_VERSION))

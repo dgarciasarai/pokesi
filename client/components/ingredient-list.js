@@ -16,9 +16,13 @@ function IngredientList (state, actions) {
             <li class="ingredient-item">
               <Link actions={actions} class="ingredient__link" href={`/ingredients/${ingredient.slug}`}>
                 <div class="ingredient__allergens">
-                  {ingredient.hasGluten && <img class="ingredient__gluten" src={gluten} />}
+                  {ingredient.hasGluten && <img alt={`El ingrediente ${ingredient.name} contiene gluten`} class="ingredient__gluten" src={gluten} />}
                 </div>
-                <img class="ingredient__image" src={ingredient.image}/>
+                <img
+                  alt={ingredient.name}
+                  class="ingredient__image"
+                  src={ingredient.image}
+                />
                 <div class="ingredient-cell">
                   <span class="ingredient__name">{ingredient.name}</span>
                   <span class="ingredient__weight">{ingredient.weight}g</span>
