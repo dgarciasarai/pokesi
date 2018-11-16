@@ -1,6 +1,6 @@
 const initialState = {
   ingredients: [],
-  ingredientsSummary: {},
+  ingredientsSummary: JSON.parse(localStorage.getItem("bowl")) || {},
   route: { pathname: window.location.pathname }
 };
 

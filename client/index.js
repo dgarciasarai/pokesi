@@ -8,7 +8,7 @@ import { registerServiceWorker } from './to-do/service-worker'
 
 import { goTo, goBack, updatePathname } from './actions/go-to';
 import { loadIngredients, loadIngredientsSuccess } from './actions/ingredients'
-import { addIngredient, removeIngredient } from './actions/summary'
+import { addIngredient, removeIngredient } from './actions/update-quantity'
 
 const actions = {
   goTo,
