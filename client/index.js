@@ -8,13 +8,16 @@ import { registerServiceWorker } from './to-do/service-worker'
 
 import { goTo, goBack, updatePathname } from './actions/go-to';
 import { loadIngredients, loadIngredientsSuccess } from './actions/ingredients'
+import { addIngredient, removeIngredient } from './actions/summary'
 
 const actions = {
   goTo,
   goBack,
   updatePathname,
   loadIngredients,
-  loadIngredientsSuccess
+  loadIngredientsSuccess,
+  addIngredient,
+  removeIngredient
 };
 
 app(initialState, actions, appView, document.getElementById('app'))

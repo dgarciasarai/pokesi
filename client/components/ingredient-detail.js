@@ -31,9 +31,9 @@ function IngredientDetail (state, actions) {
         <span class="ingredient__weight">{ingredient.weight}g</span>
       </div>
       <div class="ingredient-quantity">
-        <span class="quantity__minus">-</span>
-        <span class="quantity__total">0</span>
-        <span class="quantity__more">+</span>
+      <button class="quantity__minus" type="button" onclick={() => actions.removeIngredient(ingredient.slug)}>-</button>
+                <span class="quantity__total">{state.ingredientsSummary[ingredient.slug] || 0}</span>
+                <button class="quantity__more" type="button" onclick={() => actions.addIngredient(ingredient.slug)}>+</button>
       </div>
     </div>
     <div class="ingredient-detail-table">

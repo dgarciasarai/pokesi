@@ -27,12 +27,12 @@ function IngredientList (state, actions) {
                   <span class="ingredient__name">{ingredient.name}</span>
                   <span class="ingredient__weight">{ingredient.weight}g</span>
                 </div>
-                <div class="ingredient-quantity">
-                  <span class="quantity__minus">-</span>
-                  <span class="quantity__total">0</span>
-                  <span class="quantity__more">+</span>
-                </div>
               </Link>
+              <div class="ingredient-quantity">
+                <button class="quantity__minus" type="button" onclick={() => actions.removeIngredient(ingredient.slug)}>-</button>
+                <span class="quantity__total">{state.ingredientsSummary[ingredient.slug] || 0}</span>
+                <button class="quantity__more" type="button" onclick={() => actions.addIngredient(ingredient.slug)}>+</button>
+              </div>
             </li>
           )}</ul>
       </div>
