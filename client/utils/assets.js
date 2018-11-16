@@ -1,4 +1,4 @@
-import '!file-loader?context=./client&name=[path][name].[ext]!../manifest.json'
+import '!file-loader?context=./client&name=[path][name].[ext]!../to-do/manifest.json'
 
 import '../index.html'
 import '../404.html'
