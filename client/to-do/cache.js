@@ -14,12 +14,14 @@ async function addClientToCache(cache) {
  */
 async function addIngredientsToCache(cache) {
   const ingredientsResponse = await fetch(INGREDIENTS_URL)
-  const ingredients = await ingredientsResponse.json()
 
-  await cache.add(INGREDIENTS_URL, ingredientsResponse)
+  await cache.put(
+    INGREDIENTS_URL,
+    ingredientsResponse.clone()
+  )
 
   await Promise.all(
-    ingredients.map(
+    (await ingredientsResponse.json()).map(
       ingredient => cache.add(ingredient.image)
     )
   )
