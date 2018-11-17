@@ -94,6 +94,7 @@ body {
     right: 40px;
     position: absolute;
     font-size: 20pt;
+    background: white;
 }
 
 .quantity__more,
@@ -114,14 +115,14 @@ body {
     width: 100%;
     position: fixed;
     background: #fff;
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
     text-align: center;
 }
 
 .resume__link {
     color: #fff;
     background: #69cb91;
-    padding: 10px 120px;
+    padding: 10px 100px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 14pt;
@@ -160,9 +161,9 @@ div.ingredient-detail-table > p:nth-child(even) {
 
 .header-detail {
     background-color: #69cb91;
-    padding: 17px 15px 15px;
+    padding: 30px;
     text-align: center;
-    font-size: 20pt;
+    font-size: 25pt;
     font-family: "bebas";
 }
 
