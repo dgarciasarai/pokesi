@@ -91,7 +91,7 @@ body {
 
 .ingredient-quantity {
     align-items: center;
-    right: 40px;
+    right: 16px;
     position: absolute;
     font-size: 20pt;
     background: white;
@@ -109,7 +109,7 @@ body {
 }
 
 .quantity__total{
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .ingridients-resume {
@@ -131,11 +131,17 @@ body {
     font-weight: bold;
     font-size: 14pt;
     text-decoration: none;
+    border: none;
+    margin: 0 auto;
 }
 
 .ingredient-detail {
     display: flex;
     margin: 40px;
+}
+
+.ingredient-detail .ingredient-quantity {
+  right: 32px;
 }
 
 .ingredient-detail-table > p {
@@ -190,4 +196,39 @@ div.ingredient-detail-table > p:nth-child(even) {
 
 .ingredient-item-bowl {
     background: #E3FAF0;
+}
+
+.ingredient-list--summary {
+  padding-bottom: 0;
+}
+
+.ingredient-list--summary .ingredient-item {
+  background: white;
+  padding: 10px 30px;
+}
+
+.ingredient-list--summary .ingredient-item:nth-child(even) {
+  background: #E3FAF0;
+}
+
+.ingredient-list--summary .ingredient__name {
+  font-weight: 700;
+}
+
+.ingredient-list--summary .ingredient-quantity {
+  background: inherit;
+  right: 16px;
+}
+
+.summary-total {
+  border-top: dashed 3px #E3E6EC;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.summary-total__amount {
+  text-align: right;
+  font-size: 20pt;
+  font-weight: 600;
+  padding: 20px 30px 50px;
 }
