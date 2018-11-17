@@ -11,9 +11,9 @@ function IngredientList (state, actions) {
     <div>
       <div class="header"><span>POKE</span><span class="header-si">SI</span></div>
       <div class="ingredients">
-        <p>Selecciona tus ingredientes</p>
+        <p class="ingredients__intro">Selecciona tus ingredientes:</p>
         <ul class="ingredients-list">{state.ingredients.map(ingredient =>
-            <li class="ingredient-item">
+            <li class={`ingredient-item ${state.ingredientsSummary[ingredient.slug] ? 'ingredient-item-bowl' : ''}`}>
               <Link actions={actions} class="ingredient__link" href={`/ingredients/${ingredient.slug}`}>
                 <div class="ingredient__allergens">
                   {ingredient.hasGluten && <img alt={`El ingrediente ${ingredient.name} contiene gluten`} class="ingredient__gluten" src={gluten} />}

@@ -30,8 +30,12 @@ body {
 .ingredients {
   max-width: 480px;
   margin: 1em auto;
-  padding: 1em 1em 1em 2em;
+  padding: 0;
   position: relative;
+}
+
+.ingredients__intro {
+    padding: 1em 1em 1em 2em;
 }
 
 .ingredients-list {
@@ -41,8 +45,10 @@ body {
 }
 
 .ingredients-list > .ingredient-item {
-    margin: 40px 0px;
+    padding: 1em;
     display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
 }
 
 .ingredient-item div.ingredient-cell {
@@ -138,7 +144,7 @@ body {
 }
 
 div.ingredient-detail-table > p:nth-child(even) {
-    background-color: #69cb9111;
+    background-color: #69cb9122;
 }
 
 .ingredient__detail__image {
@@ -154,7 +160,7 @@ div.ingredient-detail-table > p:nth-child(even) {
 
 .header-detail {
     background-color: #69cb91;
-    padding: 15px;
+    padding: 17px 15px 15px;
     text-align: center;
     font-size: 20pt;
     font-family: "bebas";
@@ -175,4 +181,8 @@ div.ingredient-detail-table > p:nth-child(even) {
 .ingredient__detail__allergens img {
     width: 10px;
     margin-right: 10px;
+}
+
+.ingredient-item-bowl {
+    background: #69cb9122;
 }
