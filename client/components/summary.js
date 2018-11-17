@@ -12,6 +12,7 @@ function Summary (state, actions) {
     <Header
       actions={actions}
       showBackButton
+      showShareButton      
     />
 
     <div class="ingredients">

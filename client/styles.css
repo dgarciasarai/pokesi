@@ -21,6 +21,11 @@ body {
   text-align: center;
   font-size: 25pt;
   font-family: "bebas";
+  display: flex;
+}
+
+.header__logo {
+    margin: 0 auto;
 }
 
 .header__logo__si {
@@ -177,11 +182,21 @@ div.ingredient-detail-table > p:nth-child(even) {
     font-family: "bebas";
 }
 
-.header-detail-back-arrow {
-    width: 1em;
+.header-detail-back-arrow,
+.header-detail-share-button {
     filter: opacity(75%);
     position: absolute;
+    cursor: pointer;
+}
+
+.header-detail-back-arrow {
     left: 10px;
+    width: 1em;
+}
+
+.header-detail-share-button {
+    right: 15px;
+    width: 0.9em;
 }
 
 .ingredient__detail__allergens {

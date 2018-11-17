@@ -12,7 +12,7 @@ const updatePathname = pathname => () => {
 const goBack = () => () => {
   window.history.back();
   return {};
-}
+};
 
 export { goTo, updatePathname, goBack };
 export default goTo;

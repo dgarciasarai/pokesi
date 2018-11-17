@@ -9,6 +9,7 @@ import { registerServiceWorker } from './to-do/service-worker'
 import { goTo, goBack, updatePathname } from './actions/go-to';
 import { loadIngredients, loadIngredientsSuccess } from './actions/ingredients'
 import { addIngredient, removeIngredient } from './actions/update-quantity'
+import { share } from './actions/share'
 
 const actions = {
   goTo,
@@ -17,7 +18,8 @@ const actions = {
   loadIngredients,
   loadIngredientsSuccess,
   addIngredient,
-  removeIngredient
+  removeIngredient,
+  share
 };
 
 app(initialState, actions, appView, document.getElementById('app'))
