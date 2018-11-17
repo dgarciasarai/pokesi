@@ -166,7 +166,7 @@ div.ingredient-detail-table > p:nth-child(even) {
 
 .ingredient__detail__image > img {
     width: 100%;
-    transform: translateY(-30%);
+    transform: translateY(-20%);
 }
 
 .header-detail {
@@ -231,4 +231,57 @@ div.ingredient-detail-table > p:nth-child(even) {
   font-size: 20pt;
   font-weight: 600;
   padding: 20px 30px 50px;
+}
+
+.list-with-detail {
+  pointer-events: none;
+}
+
+@keyframes showModal {
+  to {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+.modal {
+  max-width: 50ch;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  background: white;
+  margin: 2em;
+  padding-bottom: 2em;
+  border-radius: 8px;
+  box-shadow:
+    0 0 0 100vmax rgba(0, 0, 0, 0.4),
+    0 5px 10px rgba(0, 0, 0, 0.4)
+  ;
+  opacity: 0;
+  transform: translateY(-10vh) translateX(-50%);
+  animation: showModal ease 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.modal figure {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.close-modal-button {
+  position: absolute;
+  z-index: 10;
+  background: white;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 900;
+  font-family: monospace;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  right: 0.5em;
+  top: 0.5em;
 }

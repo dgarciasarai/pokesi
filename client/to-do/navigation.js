@@ -4,7 +4,6 @@
  * @param {string} pathname
  */
 function saveNewHistoryState(pathname) {
-  requestAnimationFrame(() => window.scrollTo(0, 0))
   window.history.pushState(null, null, pathname)
 }
 

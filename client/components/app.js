@@ -12,7 +12,7 @@ function app(state, actions) {
   if (pathname === '/summary') {
     view = Summary
   } else if (/\/ingredients\/([a-z0-9-]+)/i.test(pathname)) {
-    view = IngredientDetail
+    view = IngredientList
   }
 
   if (!locationListener) {

@@ -1,8 +1,11 @@
 import { h } from 'hyperapp'
 import gluten from '../img/gluten.png'
-import Header from './header';
+import { goBack, Link } from './link'
+import backArrow from '../img/back.png'
 
-function IngredientDetail (state, actions) {
+function IngredientDetail (props) {
+  const { state, actions } = props
+
   if (state.ingredients && !state.ingredients.length) {
     actions.loadIngredients()
     return ''
@@ -14,12 +17,10 @@ function IngredientDetail (state, actions) {
     ingredient => ingredient.slug === ingredientSlug
   );
 
-  return <div>
-    <Header
-      actions={actions}
-      showBackButton
-      title={ingredient.name}
-    />
+  return <div class="modal">
+    <Link actions={props.actions} href={goBack}>
+      <div role="image" class="close-modal-button">x</div>
+    </Link>
 
     <figure class="ingredient__detail__image">
       <img src={ingredient.image}/>
