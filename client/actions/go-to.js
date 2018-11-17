@@ -10,6 +10,7 @@ const updatePathname = pathname => () => {
 };
 
 const goBack = () => () => {
+  requestAnimationFrame(() => window.scrollTo(0, 0))
   window.history.back();
   return {};
 }
