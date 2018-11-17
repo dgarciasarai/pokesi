@@ -21,4 +21,4 @@ const actions = {
 };
 
 app(initialState, actions, appView, document.getElementById('app'))
-registerServiceWorker()
+// registerServiceWorker()

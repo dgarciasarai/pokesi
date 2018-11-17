@@ -38,6 +38,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, '.tmp', 'webpack'),
+    historyApiFallback: true,
     inline: false,
     hot: false,
     host: '0.0.0.0'
