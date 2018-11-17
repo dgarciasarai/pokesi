@@ -1,7 +1,6 @@
 import { h } from 'hyperapp'
-import { Link, goBack } from './link'
-import backArrow from '../img/back.png'
 import gluten from '../img/gluten.png'
+import Header from './header';
 
 function IngredientDetail (state, actions) {
   if (state.ingredients && !state.ingredients.length) {
@@ -16,12 +15,12 @@ function IngredientDetail (state, actions) {
   );
 
   return <div>
-    <div class="header-detail">
-      <Link actions={actions} href={goBack}>
-        <img alt="Volver" src={backArrow} class="header-detail-back-arrow"/>
-      </Link>
-      <span>{ingredient.name}</span>
-    </div>
+    <Header
+      actions={actions}
+      showBackButton
+      title={ingredient.name}
+    />
+
     <figure class="ingredient__detail__image">
       <img src={ingredient.image}/>
     </figure>

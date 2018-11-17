@@ -1,6 +1,6 @@
 import { h } from 'hyperapp'
 import Link, { goBack } from './link';
-import backArrow from '../img/back.png'
+import Header from './header';
 
 function Summary (state, actions) {
   if (state.ingredients && !state.ingredients.length) {
@@ -9,13 +9,10 @@ function Summary (state, actions) {
   }
 
   return <div>
-    <div class="header">
-      <Link actions={actions} href={goBack}>
-        <img alt="Volver" src={backArrow} class="header-detail-back-arrow"/>
-      </Link>
-
-      <span>POKE</span><span class="header-si">SI</span>
-    </div>
+    <Header
+      actions={actions}
+      showBackButton
+    />
 
     <div class="ingredients">
       <p class="ingredients__intro">Tu resumen:</p>

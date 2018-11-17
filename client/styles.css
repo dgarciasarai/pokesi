@@ -16,15 +16,15 @@ body {
 }
 
 .header {
-    background-color: #69cb91;
-    padding: 30px;
-    text-align: center;
-    font-size: 25pt;
-    font-family: "bebas";
+  background-color: #69cb91;
+  padding: 30px;
+  text-align: center;
+  font-size: 25pt;
+  font-family: "bebas";
 }
 
-.header-si {
-    color: white;
+.header__logo__si {
+  color: white;
 }
 
 .ingredients {
