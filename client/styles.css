@@ -97,6 +97,10 @@ body {
     background: white;
 }
 
+.ingredient-item-bowl .ingredient-quantity {
+  background: inherit;
+}
+
 .quantity__more,
 .quantity__minus {
     background: transparent;
@@ -185,5 +189,5 @@ div.ingredient-detail-table > p:nth-child(even) {
 }
 
 .ingredient-item-bowl {
-    background: #69cb9122;
+    background: #E3FAF0;
 }
