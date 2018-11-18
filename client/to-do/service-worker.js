@@ -65,6 +65,11 @@ function handleServiceWorkerMessage(event, cacheVersion) {
  * @param {string} cacheVersion
  */
 function handleServiceWorkerFetch(event, cacheVersion) {
+  if (event.request.method === 'GET') {
+    event.respondWith(
+      respondWithCachedContent(event, cacheVersion)
+    )
+  }
 }
 
 export {
