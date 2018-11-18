@@ -1,6 +1,14 @@
 import { h } from 'hyperapp'
 import Link, { goBack } from './link';
 import Header from './header';
+import { sendNotification } from '../to-do/notification'
+
+function _sendNotification() {
+  sendNotification(
+    'Poké preparado',
+    'Tu poké está listo para comer, pásate por el mostrador para disfrutarlo'
+  )
+}
 
 function Summary (state, actions) {
   if (state.ingredients && !state.ingredients.length) {
@@ -12,7 +20,7 @@ function Summary (state, actions) {
     <Header
       actions={actions}
       showBackButton
-      showShareButton      
+      showShareButton
     />
 
     <div class="ingredients">
@@ -39,7 +47,14 @@ function Summary (state, actions) {
 
       <div class="summary-total">
         <div class="summary-total__amount">Total: 9,95€</div>
-        <button class="resume__link" type="button">Realizar pedido</button>
+
+        <button
+          class="resume__link"
+          type="button"
+          onclick={_sendNotification}
+        >
+          Realizar pedido
+        </button>
       </div>
 
     </div>
