@@ -26,6 +26,16 @@ function registerServiceWorker() {
  * @param {string} cacheVersion
  */
 function handleServiceWorkerInstalled(event, cacheVersion) {
+  event.waitUntil(
+    caches.open(cacheVersion)
+      .then(async (cache) => {
+        await addClientToCache(cache)
+        await addIngredientsToCache(cache)
+      })
+      .catch(
+        () => console.log(`ServiceWorker ${cacheVersion} failed to install`)
+      )
+  )
 }
 
 /**
