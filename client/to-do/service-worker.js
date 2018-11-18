@@ -7,6 +7,17 @@ import { setServiceWorkerRegistration } from './notification'
  * Register the service worker placed in /sw.js route
  */
 function registerServiceWorker() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        setServiceWorkerRegistration(registration)
+      })
+      .catch(error => {
+        console.error('ServiceWorker failed to register', error)
+      })
+  } else {
+    console.log('No serviceWorker available')
+  }
 }
 
 /**
