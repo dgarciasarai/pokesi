@@ -1,7 +1,7 @@
 import { h } from 'hyperapp'
 import gluten from '../img/gluten.png'
 import { goBack, Link } from './link'
-import backArrow from '../img/back.png'
+import close from '../img/close.png'
 
 function IngredientDetail (props) {
   const { state, actions } = props
@@ -19,7 +19,7 @@ function IngredientDetail (props) {
 
   return <div class="modal">
     <Link actions={props.actions} href={goBack}>
-      <div role="image" class="close-modal-button">x</div>
+      <img src={close} class="close-modal-button" />
     </Link>
 
     <figure class="ingredient__detail__image">

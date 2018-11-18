@@ -254,26 +254,29 @@ div.ingredient-detail-table > p:nth-child(even) {
 
 @keyframes showModal {
   to {
-    transform: translateY(0) translateX(-50%);
+    transform: scale(1) translateX(-50%);
     opacity: 1;
   }
 }
 
 .modal {
-  max-width: 50ch;
+  max-width: 90vw;
+  width: 54ch;
+  box-sizing: border-box;
   position: fixed;
   top: 100px;
   left: 50%;
   background: white;
-  margin: 2em;
+  margin: 2em auto;
   padding-bottom: 2em;
   border-radius: 8px;
   box-shadow:
-    0 0 0 100vmax rgba(0, 0, 0, 0.4),
-    0 5px 10px rgba(0, 0, 0, 0.4)
+    0 0 0 100vmax rgba(0, 0, 0, 0.6),
+    0 5px 10px rgba(0, 0, 0, 0.2)
   ;
   opacity: 0;
-  transform: translateY(-10vh) translateX(-50%);
+  transform: scale(0.9) translateX(-50%);
+  transform-origin: 0 50%;
   animation: showModal ease 0.3s;
   animation-fill-mode: forwards;
 }
@@ -289,14 +292,17 @@ div.ingredient-detail-table > p:nth-child(even) {
   z-index: 10;
   background: white;
   border-radius: 50%;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   text-align: center;
   line-height: 2em;
-  font-weight: 900;
+  font-weight: 300;
   font-family: monospace;
-  font-size: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    0 0 40px 10px rgba(255, 255, 255, 0.1)
+  ;
   right: 0.5em;
   top: 0.5em;
 }
