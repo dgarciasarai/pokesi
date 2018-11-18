@@ -9,12 +9,17 @@ import {
  * Adds client base code to cache
  * @param {Cache} cache
  */
-function addClientToCache(cache) {
-  return Promise.all(
-    ASSETS.map(asset => {
+async function addClientToCache(cache) {
+  await Promise.all(
+    ASSETS.map(async (asset) => {
       const assetURL = `${CLIENT_URL}/${asset}`
-      console.log(`Caching ${assetURL}`)
-      return cache.add(assetURL)
+
+      try {
+        await cache.add(assetURL)
+      } catch (error) {
+        console.error(`Failed to add ${assetURL}`)
+        throw error
+      }
     })
   )
 }
@@ -27,18 +32,23 @@ async function addIngredientsToCache(cache) {
   try {
     const ingredientsResponse = await fetch(INGREDIENTS_URL)
 
-    console.log(`Caching ${INGREDIENTS_URL}`)
     await cache.put(INGREDIENTS_URL, ingredientsResponse.clone())
 
     await Promise.all(
-      (await ingredientsResponse.json()).map(ingredient => {
+      (await ingredientsResponse.json()).map(async (ingredient) => {
         const imageURL = `${SERVER_URL}${ingredient.image}`
-        console.log(`Caching ${imageURL}`)
-        return cache.add(imageURL)
+
+        try {
+          cache.add(imageURL)
+        } catch (error) {
+          console.error(`Failed to add ${imageURL}`)
+          throw error
+        }
       })
     )
   } catch(error) {
-    console.log(error.stack)
+    console.log('Failed to add /ingredients')
+    throw error
   }
 }
 

@@ -11,11 +11,8 @@ async function respondWithCachedContent (event, cacheVersion) {
   const cache = await caches.open(cacheVersion)
   let response = await cache.match(url)
 
-  if (response) {
-    console.log(`Getting from cache ${url}`)
-  } else {
+  if (!response) {
     try {
-      console.log(`Getting from server ${url}`)
       response = await fetch(url)
     } catch (error) {
       console.error(error)

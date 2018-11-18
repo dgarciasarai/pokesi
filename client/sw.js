@@ -11,5 +11,3 @@ self.addEventListener('install', event => handleServiceWorkerInstalled(event, CA
 self.addEventListener('activate', event => handleServiceWorkerActivated(event, CACHE_VERSION))
 self.addEventListener('message', event => handleServiceWorkerMessage(event, CACHE_VERSION))
 self.addEventListener('fetch', event => handleServiceWorkerFetch(event, CACHE_VERSION))
-
-console.log(`ServiceWorker ${CACHE_VERSION}`)

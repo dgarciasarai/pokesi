@@ -8,9 +8,6 @@ import { respondWithCachedContent } from './fetch'
 function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('ServiceWorker registered')
-      })
       .catch(error => {
         console.error('ServiceWorker failed to register', error)
       })
@@ -25,13 +22,15 @@ function registerServiceWorker() {
  * @param {string} cacheVersion
  */
 function handleServiceWorkerInstalled(event, cacheVersion) {
-  console.log(`ServiceWorker ${cacheVersion} install`)
-
   event.waitUntil(
-    caches.open(cacheVersion).then(async (cache) => {
-      await addClientToCache(cache)
-      await addIngredientsToCache(cache)
-    })
+    caches.open(cacheVersion)
+      .then(async (cache) => {
+        await addClientToCache(cache)
+        await addIngredientsToCache(cache)
+      })
+      .catch(
+        () => console.log(`ServiceWorker ${cacheVersion} failed to install`)
+      )
   )
 }
 
@@ -41,10 +40,11 @@ function handleServiceWorkerInstalled(event, cacheVersion) {
  * @param {string} cacheVersion
  */
 function handleServiceWorkerActivated(event, cacheVersion) {
-  console.log(`ServiceWorker ${cacheVersion} activated`)
 
   event.waitUntil(
     clearOldCaches(cacheVersion)
+      .then(() => console.log(`ServiceWorker ${cacheVersion} activated`))
+      .catch(() => console.log(`ServiceWorker ${cacheVersion} failed to activate`))
   )
 }
 

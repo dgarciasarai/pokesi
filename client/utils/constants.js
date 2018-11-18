@@ -1,6 +1,9 @@
-const location = global.location || { hostname: 'localhost' }
+const location = global.location || {
+  hostname: 'localhost',
+  protocol: 'http:'
+}
 
-const CLIENT_URL = `http://${location.hostname}:8080`
+const CLIENT_URL = `${location.protocol}//${location.hostname}:8080`
 const SERVER_URL = `http://${location.hostname}:3000`
 const INGREDIENTS_URL = `${SERVER_URL}/ingredients`
 
