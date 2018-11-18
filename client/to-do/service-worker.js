@@ -44,6 +44,11 @@ function handleServiceWorkerInstalled(event, cacheVersion) {
  * @param {string} cacheVersion
  */
 function handleServiceWorkerActivated(event, cacheVersion) {
+  event.waitUntil(
+    clearOldCaches(cacheVersion)
+      .then(() => console.log(`ServiceWorker ${cacheVersion} activated`))
+      .catch(() => console.log(`ServiceWorker ${cacheVersion} failed to activate`))
+  )
 }
 
 /**
