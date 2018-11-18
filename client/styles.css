@@ -254,7 +254,7 @@ div.ingredient-detail-table > p:nth-child(even) {
 
 @keyframes showModal {
   to {
-    transform: scale(1) translateX(-50%);
+    transform: scale(1) translateY(-50%) translateX(-50%);
     opacity: 1;
   }
 }
@@ -264,8 +264,8 @@ div.ingredient-detail-table > p:nth-child(even) {
   width: 54ch;
   box-sizing: border-box;
   position: fixed;
-  top: 100px;
-  left: 50%;
+  top: 45vh;
+  left: 50vw;
   background: white;
   margin: 2em auto;
   padding-bottom: 2em;
@@ -275,7 +275,7 @@ div.ingredient-detail-table > p:nth-child(even) {
     0 5px 10px rgba(0, 0, 0, 0.2)
   ;
   opacity: 0;
-  transform: scale(0.9) translateX(-50%);
+  transform: scale(0.9) translateY(-50%) translateX(-50%);
   transform-origin: 0 50%;
   animation: showModal ease 0.3s;
   animation-fill-mode: forwards;
