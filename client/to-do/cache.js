@@ -10,6 +10,18 @@ import {
  * @param {Cache} cache
  */
 async function addClientToCache(cache) {
+  await Promise.all(
+    ASSETS.map(async (asset) => {
+      const assetURL = `${CLIENT_URL}/${asset}`
+
+      try {
+        await cache.add(assetURL)
+      } catch (error) {
+        console.error(`Failed to add ${assetURL}`)
+        throw error
+      }
+    })
+  )
 }
 
 /**
