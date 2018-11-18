@@ -41,10 +41,12 @@ module.exports = {
         from: path.resolve(__dirname, 'client', 'to-do', 'manifest.json'),
         to: 'manifest.json'
       },
-      ...ASSETS.map(asset => ({
-        from: path.resolve(__dirname, 'client', asset),
-        to: asset
-      }))
+      ...ASSETS
+        .filter(asset => asset !== 'manifest.json')
+        .map(asset => ({
+          from: path.resolve(__dirname, 'client', asset),
+          to: asset
+        }))
     ])
   ],
   resolve: {
