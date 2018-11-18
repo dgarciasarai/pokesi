@@ -29,6 +29,27 @@ async function addClientToCache(cache) {
  * @param {Cache} cache
  */
 async function addIngredientsToCache(cache) {
+  try {
+    const ingredientsResponse = await fetch(INGREDIENTS_URL)
+
+    await cache.put(INGREDIENTS_URL, ingredientsResponse.clone())
+
+    await Promise.all(
+      (await ingredientsResponse.json()).map(async (ingredient) => {
+        const imageURL = `${SERVER_URL}${ingredient.image}`
+
+        try {
+          cache.add(imageURL)
+        } catch (error) {
+          console.error(`Failed to add ${imageURL}`)
+          throw error
+        }
+      })
+    )
+  } catch(error) {
+    console.log('Failed to add /ingredients')
+    throw error
+  }
 }
 
 /**
