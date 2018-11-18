@@ -1,5 +1,5 @@
 import 'babel-polyfill'
-import { addClientToCache, addIngredientsToCache } from './cache'
+import { addClientToCache, addIngredientsToCache, clearOldCaches } from './cache'
 import { respondWithCachedContent } from './fetch'
 
 /**
@@ -14,6 +14,8 @@ function registerServiceWorker() {
       .catch(error => {
         console.error('ServiceWorker failed to register', error)
       })
+  } else {
+    console.log('No serviceWorker available')
   }
 }
 
@@ -40,6 +42,10 @@ function handleServiceWorkerInstalled(event, cacheVersion) {
  */
 function handleServiceWorkerActivated(event, cacheVersion) {
   console.log(`ServiceWorker ${cacheVersion} activated`)
+
+  event.waitUntil(
+    clearOldCaches(cacheVersion)
+  )
 }
 
 /**

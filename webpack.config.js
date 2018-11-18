@@ -1,4 +1,6 @@
+const { ASSETS } = require('./client/utils/constants')
 const path = require('path')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -33,6 +35,18 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, 'client', 'to-do', 'manifest.json'),
+        to: 'manifest.json'
+      },
+      ...ASSETS.map(asset => ({
+        from: path.resolve(__dirname, 'client', asset),
+        to: asset
+      }))
+    ])
+  ],
   resolve: {
     extensions: ['*', '.js']
   },
