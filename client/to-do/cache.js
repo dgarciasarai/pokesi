@@ -57,6 +57,16 @@ async function addIngredientsToCache(cache) {
  * @param {string} cacheVersion
  */
 function clearOldCaches(cacheVersion) {
+  return caches.keys().then(cacheNames => {
+    return Promise.all(
+      cacheNames
+        .filter(cacheName => cacheName !== cacheVersion)
+        .map(cacheName => {
+          console.log(`Removing cache ${cacheName}`)
+          caches.delete(cacheName)
+        })
+    )
+  })
 }
 
 export {
