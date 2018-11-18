@@ -4,6 +4,7 @@
  * @param {string} pathname
  */
 function saveNewHistoryState(pathname) {
+  window.history.pushState(null, null, pathname)
 }
 
 /**
