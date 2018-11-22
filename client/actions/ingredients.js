@@ -3,9 +3,9 @@ import { SERVER_URL } from '../utils/constants';
 
 const loadIngredients = () => async (state, actions) => {
   try {
-    const response = await api('/ingredients');
-    const ingredients = await response.json();
-    actions.loadIngredientsSuccess(ingredients);
+    const response = await api('/ingredients.json');
+    const responseContent = await response.json();
+    actions.loadIngredientsSuccess(responseContent.ingredients);
   } catch (error) {
     console.error(error)
   }

@@ -34,8 +34,10 @@ async function addIngredientsToCache(cache) {
 
     await cache.put(INGREDIENTS_URL, ingredientsResponse.clone())
 
+    const ingredientsResponseContent = await ingredientsResponse.json()
+
     await Promise.all(
-      (await ingredientsResponse.json()).map(async (ingredient) => {
+      ingredientsResponseContent.ingredients.map(async (ingredient) => {
         const imageURL = `${SERVER_URL}${ingredient.image}`
 
         try {
